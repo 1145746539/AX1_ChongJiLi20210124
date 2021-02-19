@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CFA45AE-3BAD-4BB4-93B7-EE891334C7BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AX1_ChongJiLi20201221</RootNamespace>
+    <AssemblyName>AX1_ChongJiLi20201221</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\x64\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="NPOI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAlarm.Designer.cs">
+      <DependentUpon>FrAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrAxisPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAxisPara.Designer.cs">
+      <DependentUpon>FrAxisPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrAxisStatusIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAxisStatusIO.Designer.cs">
+      <DependentUpon>FrAxisStatusIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrLoading.Designer.cs">
+      <DependentUpon>FrLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrMain.Designer.cs">
+      <DependentUpon>FrMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrAxisManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAxisManual.Designer.cs">
+      <DependentUpon>FrAxisManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrManualCylinderIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrManualCylinderIO.Designer.cs">
+      <DependentUpon>FrManualCylinderIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LTDMC.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicClass.cs" />
+    <Compile Include="Scan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan.Designer.cs">
+      <DependentUpon>Scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VarClass.cs" />
+    <EmbeddedResource Include="FrAlarm.resx">
+      <DependentUpon>FrAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrAxisPara.resx">
+      <DependentUpon>FrAxisPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrAxisStatusIO.resx">
+      <DependentUpon>FrAxisStatusIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrLoading.resx">
+      <DependentUpon>FrLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrMain.resx">
+      <DependentUpon>FrMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrAxisManual.resx">
+      <DependentUpon>FrAxisManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrManualCylinderIO.resx">
+      <DependentUpon>FrManualCylinderIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan.resx">
+      <DependentUpon>Scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\titlep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\timm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\btn8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\collection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\dfr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\Green.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sysimage\Red.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InpactForceToSFC\InpactForceToSFC\InpactForceToSFC.csproj">
+      <Project>{7698c6f4-953c-4a00-8952-33ca18019cdb}</Project>
+      <Name>InpactForceToSFC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
