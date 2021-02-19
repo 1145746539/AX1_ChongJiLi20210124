@@ -12,6 +12,9 @@ using System.Windows.Forms;
 
 namespace InpactForceToSFC
 {
+    /// <summary>
+    /// 
+    /// </summary>
  public    class http
     {
         public static string SFCtxtPath = Application.StartupPath + "SFCLog" + "\\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
