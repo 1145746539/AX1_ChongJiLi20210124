@@ -122,7 +122,6 @@ namespace AX1_ChongJiLi20201221
 
         private void label59_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
