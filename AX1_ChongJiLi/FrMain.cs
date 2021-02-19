@@ -15,9 +15,7 @@ using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 
-/// <summary>
-/// ?
-/// </summary>
+
 namespace AX1_ChongJiLi20201221
 {
     public partial class FrMain : Form
